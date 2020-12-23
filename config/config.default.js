@@ -22,7 +22,44 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
+  config.mysql = {
+    // 单数据库信息配置
+    client: {
+      // host
+      host: '127.0.0.1',
+      // 端口号
+      port: '3306',
+      // 用户名
+      user: 'root',
+      // 密码
+      password: 'root',
+      // 数据库名
+      database: 'eggTest',
+    },
+    // 是否加载到 app 上，默认开启
+    app: true,
+    // 是否加载到 agent 上，默认关闭
+    agent: false,
+  };
 
+  // 跨域配置
+  config.cors = {
+    origin: ['*'],
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+    credentials: true,
+  };
+
+  config.security = {
+    // csrf: false,
+    csrf: {
+      enable: false, // 前后端分离，post请求不方便携带_csrf
+      ignoreJSON: true,
+      headerName: 'authorization',
+    },
+    methodnoallow: {
+      enable: false,
+    },
+  }
   return {
     ...config,
     ...userConfig,

@@ -7,8 +7,21 @@
     "declarations": true
   },
   "dependencies": {
+    "await-stream-ready": "^1.0.1",
+    "cheerio": "^1.0.0-rc.5",
+    "cross-env": "^7.0.3",
     "egg": "^2.15.1",
-    "egg-scripts": "^2.11.0"
+    "egg-cors": "^2.2.3",
+    "egg-multipart": "^2.10.3",
+    "egg-mysql": "^3.0.0",
+    "egg-onerror": "^2.1.0",
+    "egg-scripts": "^2.11.0",
+    "egg-validate": "^2.0.2",
+    "iconv-lite": "^0.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "nanoid": "^3.1.20",
+    "stream-wormhole": "^1.1.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -23,6 +36,12 @@
     "node": ">=10.0.0"
   },
   "scripts": {
+    "server:local": "cross-env EGG_SERVER_ENV=local egg-bin debug",
+    "server:test": "cross-env EGG_SERVER_ENV=test egg-bin debug",
+    "server:prod": "cross-env EGG_SERVER_ENV=prod egg-bin debug",
+    "start:dev": "cross-env EGG_SERVER_ENV=dev egg-scripts start --daemon  --title=egg-server-eggExample ",
+    "start:test": "cross-env EGG_SERVER_ENV=test egg-scripts start --daemon  --title=egg-server-eggExample ",
+    "start:prod": "egg-scripts start --daemon  --title=egg-server-eggExample ",
     "start": "egg-scripts start --daemon --title=egg-server-eggExample",
     "stop": "egg-scripts stop --title=egg-server-eggExample",
     "dev": "egg-bin dev",
