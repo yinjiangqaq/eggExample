@@ -1,6 +1,6 @@
 'use strict';
 module.exports = app => {
-    const { STRING, BIGINT, INTEGER } = app.sequelize
+    const { STRING, BIGINT, INTEGER } = app.Sequelize
     const user = app.dbEggTest.define('user', {
         id: {
             type: INTEGER(11),

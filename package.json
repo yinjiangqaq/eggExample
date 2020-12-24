@@ -13,15 +13,21 @@
     "egg": "^2.15.1",
     "egg-cors": "^2.2.3",
     "egg-multipart": "^2.10.3",
-    "egg-mysql": "^3.0.0",
     "egg-onerror": "^2.1.0",
     "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^6.0.0",
     "egg-validate": "^2.0.2",
+    "egg-view-vue-ssr": "^3.3.3",
+    "element-ui": "^2.14.1",
     "iconv-lite": "^0.6.2",
     "jsonwebtoken": "^8.5.1",
     "md5": "^2.3.0",
+    "mysql2": "^2.2.5",
     "nanoid": "^3.1.20",
-    "stream-wormhole": "^1.1.0"
+    "stream-wormhole": "^1.1.0",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",

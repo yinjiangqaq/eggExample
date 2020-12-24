@@ -13,14 +13,20 @@ exports.cors = {
   package: 'egg-cors',
 };
 // mysql
-exports.mysql = {
-  enable: true,
-  package: 'egg-mysql',
-};
+
 // 上传
 exports.multipart = {
   enable: true,
 };
+//打开服务端ssr
+exports.vuessr = {
+  enable: true,
+  package: 'egg-view-vue-ssr'
+};
+exports.sequelize = {
+  enable: true,
+  package: 'egg-sequelize'
+}
 
 
 
