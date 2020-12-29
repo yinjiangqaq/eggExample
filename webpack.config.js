@@ -3,10 +3,14 @@
  */
 //const merge = require("webpack-merge");
 //const customConfig = require("./webpack/dev.conf"); //这里可以通过process.env.NODE_ENV来区分环境，换不同的配置
+const alias = require("./webpack/alias");
 
 module.exports = {
   egg: true,
   framework: "vue",
+  resolve: {
+    alias,
+  },
   entry: {
     app: "app/web/page/app/index.js",
   },

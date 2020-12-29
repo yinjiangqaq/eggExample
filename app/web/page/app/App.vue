@@ -1,9 +1,6 @@
 <template>
-  <div id="app">
-  
-      <div v-html="message">{{ message }}</div>
-
-    <!-- <router-view></router-view> -->
+  <div class="container">
+    <router-view></router-view>
   </div>
 </template>
 
@@ -11,4 +8,9 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.container {
+  width: 100%;
+  height: 100%;
+}
+</style>

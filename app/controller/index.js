@@ -16,7 +16,6 @@ class AppController extends Controller {
         {
           url: this.ctx.url,
           env: this.ctx.app.config.env,
-          message: "egg vue client render render",
         },
         { layout: path.join(app.baseDir, "app/web/view/layout.html") }
       );
