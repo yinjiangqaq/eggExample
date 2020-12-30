@@ -61,7 +61,8 @@ export default {
             account: this.ruleForm.username,
             password: this.ruleForm.password,
           }).then((res) => {
-            if (res.code === 200) {
+            console.log(res)
+            if (res.data.code === 0) {
               this.$router.push("/project");
             }                                                                     
           });
