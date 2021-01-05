@@ -38,3 +38,8 @@ $ npm stop
 ### frontend
 
 - vue
+
+### documents
+ https://github.com/yinjiangqaq/studyDiary/blob/master/egg%E5%AE%9E%E6%88%98.md
+
+ https://www.yuque.com/easy-team/egg-vue/start
