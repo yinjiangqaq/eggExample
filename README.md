@@ -43,3 +43,6 @@ $ npm stop
  https://github.com/yinjiangqaq/studyDiary/blob/master/egg%E5%AE%9E%E6%88%98.md
 
  https://www.yuque.com/easy-team/egg-vue/start
+
+
+## 项目的移动端适配和多页面配置在multiPort分支
