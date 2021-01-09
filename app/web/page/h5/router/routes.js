@@ -7,11 +7,11 @@ export default [
   {
     name: "login",
     path: "/login",
-    component: () => import("@views/login.vue"),
+    component: () => import("@h5/views/login.vue"),
   },
   {
     name: "project",
     path: "/project",
-    component: () => import("@views/project.vue"),
+    component: () => import("@h5/views/project.vue"),
   },
 ];

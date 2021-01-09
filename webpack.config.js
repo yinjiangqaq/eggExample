@@ -12,7 +12,8 @@ module.exports = {
     alias,
   },
   entry: {
-    app: "app/web/page/app/index.js",
+    pc: "app/web/page/pc/index.js",//PC端入口
+    h5: "app/web/page/h5/index.js",//移动端入口
   },
   devtool: "source-map",
   deploy: {

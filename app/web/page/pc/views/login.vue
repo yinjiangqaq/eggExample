@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { login } from "../services/user";
+import { login } from "@services/user";
 export default {
   data: function() {
     return {
@@ -80,7 +80,7 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/imgs/IU.jpeg");
+  background-image: url("~@assets/imgs/IU.jpeg");
   background-size: 100%;
 }
 .login-mask {
