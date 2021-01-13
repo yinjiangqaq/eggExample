@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
 module.exports = {
   //报错拓展
-  throwError(code = 400, msg = "服务器错误") {
+  throwError(code = 400, msg = '服务器错误') {
     const err = new Error(msg);
     err.code = code;
     err.msg = msg;

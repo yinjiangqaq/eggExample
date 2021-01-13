@@ -38,7 +38,7 @@
 <script>
 import { login } from "../services/user";
 export default {
-  data: function() {
+  data: function () {
     return {
       ruleForm: {
         username: "admin",
@@ -61,10 +61,12 @@ export default {
             account: this.ruleForm.username,
             password: this.ruleForm.password,
           }).then((res) => {
-            console.log(res)
-            if (res.data.code === 0) {
+            //  console.log(res);
+            if (res.code === 0) {
+              //把拿到的token存在cookie
+              window.localStorage.setItem('token',res.data)
               this.$router.push("/project");
-            }                                                                     
+            }
           });
         } else {
           return false;

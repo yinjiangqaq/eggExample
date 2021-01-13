@@ -2,7 +2,7 @@ export default [
   {
     name: "home",
     path: "/",
-    redirect: "/login",
+    // redirect: "/login",
   },
   {
     name: "login",
