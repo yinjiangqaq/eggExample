@@ -13,5 +13,12 @@ export default [
     name: "project",
     path: "/project",
     component: () => import("@views/project.vue"),
+    children:[
+      {
+        name:'account',
+        path:'/project/account',
+        component:()=>import('@views/account.vue')
+      }
+    ]
   },
 ];

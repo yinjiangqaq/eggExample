@@ -19,14 +19,14 @@
               <template slot="title">
                 <span slot="title">{{ ssubmenu.name }} </span>
               </template>
-              <router-link :to="`/project/${ssubmenu.name}`" class="link_style">
+              <router-link :to="`/project/${ssubmenu.label}`" class="link_style">
                 <el-menu-item :index="`${index}-${subIndex}-${ssubIndex}`">
                   <span slot="title">{{ ssubmenu.name }}</span>
                 </el-menu-item>
               </router-link>
             </el-submenu>
           </template>
-          <router-link v-else :key="subIndex" :to="`/project/${submenu.name}`" class="link_style">
+          <router-link v-else :key="subIndex" :to="`/project/${submenu.label}`" class="link_style">
             <el-menu-item :index="`${index}-${subIndex}`">
               <span slot="title">{{ submenu.name }}</span>
             </el-menu-item>
@@ -49,10 +49,12 @@ export default {
             {
               id: 1,
               name: "账号管理",
+              label:'account'
             },
             {
               id: 2,
               name: "信用管理",
+              label:'credit'
             },
           ],
         },
@@ -63,10 +65,12 @@ export default {
             {
               id: 4,
               name: "房屋租赁管理",
+              label:'room'
             },
             {
               id: 5,
               name: "公共资源租赁管理",
+              label:'common'
             },
           ],
         },
