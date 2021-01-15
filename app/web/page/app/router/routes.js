@@ -15,9 +15,14 @@ export default [
     component: () => import("@views/project.vue"),
     children:[
       {
-        name:'account',
+        name:'账号管理',
         path:'/project/account',
         component:()=>import('@views/account.vue')
+      },
+      {
+        name:'信用管理',
+        path:'/project/credit',
+        component:()=>import('@views/credit.vue')
       }
     ]
   },

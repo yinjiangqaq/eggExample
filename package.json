@@ -47,6 +47,8 @@
     "babel-preset-env": "^1.7.0",
     "egg-bin": "^4.11.0",
     "egg-ci": "^1.11.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
     "egg-mock": "^3.21.0",
     "eslint": "^5.13.0",
     "eslint-config-egg": "^7.1.0"

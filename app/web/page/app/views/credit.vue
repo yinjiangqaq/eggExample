@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">账号管理</div>
+    <div class="container">信用管理</div>
   </div>
 </template>
 
@@ -10,6 +10,6 @@ export default {};
 
 <style lang="scss" scoped>
 .container {
-  padding: 18px 20px;
+  padding: 18px 20px 0;
 }
 </style>

@@ -2,7 +2,7 @@
   <el-header class="header">
     <div class="left-menu">
       <div class="logo"></div>
-      <div class="products"></div>
+      <div class="products">共享公寓管理后台</div>
     </div>
 
     <div class="right-menu">
@@ -63,6 +63,7 @@ export default {};
   font-size: 20px;
 }
 .products {
+  line-height: 38px;
 }
 .el-dropdown-link {
   cursor: pointer;
