@@ -14,6 +14,7 @@ class AppController extends Controller {
       await this.ctx.renderClient(
         'app.js',
         {
+          //这一部分是注入到前端页面的全局变量中，前端可以通过window.__INITIAL_STATE__访问得到
           url: this.ctx.url,
           env: this.ctx.app.config.env,
         },
