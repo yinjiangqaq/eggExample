@@ -66,7 +66,7 @@ export default {
   transition: all 0.7s;
 }
 .breadcrumb-leave-active {
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .container {
   height: 100%;

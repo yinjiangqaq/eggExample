@@ -10,6 +10,7 @@ export default {};
 
 <style lang="scss" scoped>
 .container {
+  position: absolute;
   padding: 18px 20px;
 }
 </style>
