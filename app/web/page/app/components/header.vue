@@ -45,7 +45,7 @@ export default {};
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
   border-bottom: 1px solid #e9e9e9;
   z-index: 1;
-  padding: 0 50px 0 20px;
+  padding: 0 60px 0 20px;
 }
 
 .left-menu {

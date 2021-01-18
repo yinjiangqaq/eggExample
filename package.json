@@ -26,6 +26,7 @@
     "egg-webpack-vue": "2.0.2",
     "element-ui": "^2.14.1",
     "iconv-lite": "^0.6.2",
+    "is": "^3.3.0",
     "jsonwebtoken": "^8.5.1",
     "md5": "^2.3.0",
     "mysql2": "^2.2.5",
